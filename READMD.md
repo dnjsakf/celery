@@ -6,6 +6,6 @@ https://github.com/microsoftarchive/redis/releases
 $ redis-server redis.windows.conf --port=3001
 
 # 3. run celery 
-$ celery worker --app tasks --loglevel=info
+$ celery worker --app tasks --loglevel=info --pool=solo
 or
-$ celery -A tasks worker --loglevel=info
+$ celery -A tasks worker --loglevel=info --pool=solo
